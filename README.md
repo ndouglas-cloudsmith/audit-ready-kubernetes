@@ -6,8 +6,6 @@ This was created for **Workshop #3** of PlatformCon: <br/>
 
 <img width="50%" height="551" alt="Screenshot 2026-06-06 at 22 14 59" src="https://github.com/user-attachments/assets/53632a73-9549-4505-85aa-808107e39b46" />
 
-
-
 ### Learning Outcomes
 - ```OPA Gatekeeper``` as as admission control technology in Kubernetes
 - ```Kyverno``` as as admission control technology in Kubernetes
