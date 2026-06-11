@@ -34,6 +34,9 @@ chmod 755 opa
 sudo mv opa /usr/local/bin/
 ```
 
+<img width="1884" height="644" alt="violation" src="https://github.com/user-attachments/assets/8370c4a4-d34a-4211-844c-37f14cf8563c" />
+
+
 
 ## PlatformCon 2026 Workshops
 
