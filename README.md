@@ -8,8 +8,8 @@ This was created for **Workshop #3** of PlatformCon: <br/>
 
 ### Learning Outcomes
 - ```OPA Gatekeeper``` as as admission control technology in Kubernetes
-- ```Kyverno``` as as admission control technology in Kubernetes
-- ```Calico``` and ```Cilium``` as network enforcement engines for Kubernetes
+- ```OPA``` (**Edge**) is needed when we are enforcing controls outside of Kubernetes
+- ```Kyverno``` is proving to be a strong admission control alternative in Kubernetes
 
 ## Part 1: OPA Gatekeeper
 
@@ -18,6 +18,21 @@ Let's start off by installing **[OPA Gatekeeper](https://kubernetes.io/blog/2019
 kubectl apply -f https://raw.githubusercontent.com/open-policy-agent/gatekeeper/v3.22.2/deploy/gatekeeper.yaml
 ```
 
+## Part 2: OPA on the Edge
+
+Let's start off by installing **[OPA](https://github.com/ndouglas-cloudsmith/malicious-package-policy)** on a standalone endpoint. Since OPA is written in ```Go```, it's just a single executable file.
+
+On my local ```macOS``` workstation, I will be using ```Homebrew``` to install OPA:
+```
+brew install opa
+```
+
+However, for ```Linux``` endpoints, we need to download the binary, make it executable, and move it to your path:
+```
+curl -L -o opa https://openpolicyagent.org/downloads/latest/opa_linux_amd64_static
+chmod 755 opa
+sudo mv opa /usr/local/bin/
+```
 
 
 ## PlatformCon 2026 Workshops
