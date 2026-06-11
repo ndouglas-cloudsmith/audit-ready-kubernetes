@@ -4,7 +4,8 @@
 This was created for **Workshop #3** of PlatformCon: <br/>
 [Link to the PlatformCon session](https://platformcon.com/sessions/audit-ready-kubernetes-how-to-leverage-policy-as-code-for-continuous-compliance)
 
-<img width="50%" height="551" alt="Screenshot 2026-06-06 at 22 14 59" src="https://github.com/user-attachments/assets/53632a73-9549-4505-85aa-808107e39b46" />
+<img width="50%" height="551" alt="audit-ready" src="https://github.com/user-attachments/assets/9402c784-6e5e-4229-bf40-df094b40b431" />
+
 
 ### Learning Outcomes
 - ```OPA Gatekeeper``` as as admission control technology in Kubernetes
