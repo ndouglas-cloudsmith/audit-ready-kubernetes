@@ -13,6 +13,11 @@ This was created for **Workshop #3** of PlatformCon: <br/>
 
 ## Part 1: OPA Gatekeeper
 
+Let's start off by installing **[OPA Gatekeeper](https://kubernetes.io/blog/2019/08/06/opa-gatekeeper-policy-and-governance-for-kubernetes/)** - specifically for Kubernetes, using a **[Prebuilt Image](https://open-policy-agent.github.io/gatekeeper/website/docs/install#deploying-a-release-using-prebuilt-image)**
+```
+kubectl apply -f https://raw.githubusercontent.com/open-policy-agent/gatekeeper/v3.22.2/deploy/gatekeeper.yaml
+```
+
 
 
 ## PlatformCon 2026 Workshops
