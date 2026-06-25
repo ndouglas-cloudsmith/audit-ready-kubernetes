@@ -1,0 +1,26 @@
+apiVersion: cilium.io/v1alpha1
+kind: TracingPolicy
+metadata:
+  name: block-shell-exec-python-app
+  namespace: kube-system # Deployed where Tetragon is running, but scoped below
+spec:
+  # Target only your specific python-app pods
+  podSelector:
+    matchLabels:
+      app: python-app
+  kprobes:
+    - call: "security_bprm_check"
+      syscall: false
+      args:
+        - index: 0
+          type: "linux_binprm"
+      selectors:
+        - matchBinaries:
+            - operator: "In"
+              values:
+                - "/bin/sh"
+                - "/bin/bash"
+                - "/usr/bin/sh"
+                - "/usr/bin/bash"
+          matchActions:
+            - action: Sigkill
